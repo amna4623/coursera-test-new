@@ -1,0 +1,179 @@
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list hr {
+  color: black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -65px;
+}
+/* END HEADER */
+/* HOME PAGE */
+
+.Chicken, .Beef, .Sushi {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.Chicken:hover, .Beef:hover, .Sushi:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/* Content */
+.Chicken {
+  position: relative; 
+  background-color: grey; 
+  width: 85%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px;  
+}
+.Beef {
+  background-color: grey; 
+  width: 85%;
+  height: auto;
+  margin: auto; 
+  margin-bottom: 10px;
+  position: relative;
+}
+.Sushi {
+  background-color: grey; 
+  width: 85%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+h1 {
+  text-align: -webkit-center;
+}
+h3{
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+p {
+  /**height: 180px;**/
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* END HOME PAGE */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ 
+.navbar-brand p span { /* Star-K */
+  visibility: hidden;
+}
+#nav-list {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle {
+  visibility: hidden;
+} 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+.navbar-brand p span { /* Star-K */
+  visibility: hidden;
+}
+#nav-list {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle {
+  visibility: hidden;
+} 
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+.navbar-brand p span { /* Star-K */
+  visibility: hidden;
+}
+#nav-list {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  visibility: hidden;
+}
+.navbar-header button.navbar-toggle {
+  visibility: hidden;
+} 
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+}
+/********** Super extra small devices Only  **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */ 
+}
+
+
+
